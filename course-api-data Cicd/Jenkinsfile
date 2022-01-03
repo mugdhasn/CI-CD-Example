@@ -8,21 +8,21 @@ pipeline{
 		stage ('compile stage'){
 			steps{
 			
-			  	bat 'mvn clean compile'
+			  	bat 'maven clean compile'
 			  	
 			}
 		}
 		stage ('Testing Stage'){
 			steps{
 			
-			  	bat 'mvn test'
+			  	bat 'maven test'
 			  	
 			}
 		}
 		stage ('Deploy stage'){
 			steps{
 			
-			  	bat 'mvn deploy'
+			  	bat 'maven deploy'
 			  	
 			}
 		}
